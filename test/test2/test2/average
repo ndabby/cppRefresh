@@ -1,0 +1,31 @@
+/***************************************
+computes the total and average of five numbers.
+ ***************************************/
+//data declarations
+
+#include <iostream>
+using namespace std;
+
+float numbers[5]; //the array stores 5 floating point numbers
+float total; //total holds the sum of the numbers in array
+float average; // stores the average value of the five numbers
+
+int main(){
+    
+    total = 0.0;
+    
+    numbers[0] = 34.0;
+    numbers[1] = 27.0;
+    numbers[2] = 46.5;
+    numbers[3] = 82.0;
+    numbers[4] = 22.0;
+    
+    for (int i = 0; i < 5; i++){
+        total+= numbers[i];
+    }
+    average = total/5;
+    cout << average ;
+    
+
+    return(0);
+}
